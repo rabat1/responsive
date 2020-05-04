@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         
+    
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<script>
+    $(document).ready(function () {
+
+// Define the menu we are working with
+var menu = $('.navbar');
+
+// Get the menus current offset
+var origOffsetY = menu.offset().top;
+
+/**
+ * scroll
+ * Perform our menu mod
+ */
+function scroll() {
+
+    // Check the menus offset. 
+    if ($(window).scrollTop() >= origOffsetY) {
+
+        //If it is indeed beyond the offset, affix it to the top.
+        $(menu).addClass('navbar-fixed-top');
+
+    } else {
+
+        // Otherwise, un affix it.
+        $(menu).removeClass('navbar-fixed-top');
+
+    }
+}
+
+// Anytime the document is scrolled act on it
+document.onscroll = scroll;
+
+});
+</script>
+
+</head>
+
+<body>
+    <div id="menu">
+        <div id="menucontent">
+            <div id="menuimg">
+               <a href="https://www.facebook.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-facebook" ></i></a>
+               <a href="https://www.twitter.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-twitter" ></i></a>
+               <a href="https://www.google.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-google" ></i></a>
+               <a href="https://www.instagram.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-instagram" ></i></a>
+               <a href="https://www.whatsapp.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-whatsapp" ></i></a>
+             
+            </div>
+
+            <div id="menutext">
+                Millions of people's life has changed, millions more awaiting your donation
+            </div>
+
+            <div id="menubutton">
+                <span class="sp"><a href="" class="mb">UK Donor</a></span>
+                <span class="sp"><a href="" class="mb">Donor Now</a></span>
+                <span class="sp"><a href="" class="mb">SMIT Results</a></span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container">
+<div class="navbar-header" >
+    <button class=" navbar-toggle" data-toggle="collapse" data-target="#nav1" style="margin-top: 20px;" ><span class="icon-bar"></span><span class="icon-bar" ></span><span class="icon-bar"></span></button>
+    <a class="navbar-brand"><img src="S.png" width=200px; ></a> 
+    
+    </div>
+<div class="collapse navbar-collapse" id="nav1">
+    
+    <ul class="nav navbar-nav" style="margin-left: 150px; margin-top: 10px;" >
+        <li class="dropdown">
+            <a href="#" class="btn1 dropdown-toggle"  >Home</a>
+                </li>
+      
+        <li class="dropdown">
+        <a href="#" class="btn1 dropdown-toggle" data-toggle="dropdown" >About<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a  href="#" class="btn2">Introduction</a></li>
+                <li><a href="#" class="btn2">Chairman message</a></li>
+                <li><a href="#" class="btn2">Syllani Annual Report</a></li>
+               
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="btn1 dropdown-toggle" data-toggle="dropdown" >Syllani Services<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a  href="#" class="btn2">Education</a></li>
+                    <li><a href="#" class="btn2">Welfare</a></li>
+                    <li><a href="#" class="btn2">Health</a></li>
+                    <li><a href="#" class="btn2">Projects</a></li>
+                    <li><a  href="#" class="btn2">Sublink</a></li>
+                    <li><a href="#" class="btn2">Sublink</a></li>
+                    <li><a href="#" class="btn2">Sublink</a></li>
+                    <li><a href="#" class="btn2">Sublink</a></li>
+                    <li><a href="#" class="btn2">Sublink</a></li>
+    
+                </ul>
+            </li>
+           
+            <li class="dropdown">
+                <a href="#" class="btn1 dropdown-toggle" data-toggle="dropdown" >Future Projects<span class="caret"></span></a>
+                    <ul class="dr dropdown-menu">
+                        <li><a  href="#" class="btn2">Syllani University</a></li>
+                        <li><a href="#" class="btn2">Syllani City</a></li>
+        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="btn1 dropdown-toggle"  >Media</a>
+                        </li>
+              
+                        <li class="dropdown">
+                            <a href="#" class="btn1 dropdown-toggle"  >News</a>
+                                </li>
+
+                       <li class="dropdown">
+                    <a href="#" class="btn1 dropdown-toggle" data-toggle="dropdown" >Donation<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="#" class="btn2">Bank Details</a></li>
+                            <li><a href="#" class="btn2">Sadqah</a></li>
+                            <li><a href="#" class="btn2">Aqiqah</a></li>
+                            <li><a href="#" class="btn2">Other Donations</a></li>
+                            <li><a  href="#" class="btn2">Bank Details</a></li>
+                            <li><a href="#" class="btn2">Sadqah</a></li>
+                            <li><a href="#" class="btn2">Aqiqah</a></li>
+                            <li><a href="#" class="btn2">Sublink</a></li>
+            
+                        </ul>
+                    </li>
+              
+                      
+              
+          </ul>
+
+</div>
+
+
+        </div>
+    </nav>
+
+    <!-- <div id="bigimg"> 
+        <img src="i.jpg"  class="img-responsive">
+    </div> -->
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="i.jpg" alt="Los Angeles" id="bigimg">
+            </div>
+      
+            <div class="item">
+              <img src="d.webp" alt="Chicago" id="bigimg">
+            </div>
+          
+            <div class="item">
+              <img src="do.jpg" alt="New york" id="bigimg">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+    <div class="container" style="background-color: royalblue;color: white; margin-top: 8px;">
+        <div class="row">
+            <div class="col" id="ani">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque amet repellatfeferf
+                erfefe ccvcccc we fdfghhgg frefrfev facilis ea, dolore quo voluptas odit
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" col1 col-sm-12 col-lg-12"><img src="w.jpg" width=270px;>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="afimg">
+        Established in May 1999 by famous spiritual and religious scholar
+        Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust
+        was built on the fundamentals of breaking the cycle of poverty,
+        alleviating the financial troublesgiving people a chance to live a
+        dignified life and spreading happiness.
+    </div>
+    <div class="afimg">
+        We are an organization that believes in lighting up the lives of
+        underprivileged people across the world. We endeavor to provide the
+        best quality services in areas including food, education, medical
+        and social welfare free of cost to people living in the dark. With
+        over 60 different sectors, we feed thousands of hungry people each
+        day, hundreds more are given the hope of life through medical
+        health care, many are educated to become leaders of tomorrow
+        and several are given the opportunity to stand on their feet
+        financially.
+    </div>
+
+    <div class="afimg">
+        Today, we are proud to say that our physical presence extends
+        throughout Pakistan with a vast network of 125 branches operating
+        in major cities including Karachi, Lahore, Islamabad, Rawalpindi,
+        Hyderabad and Faisalabad. Apart from Pakistan, we have overseas
+        offices in the UK, USA and UAE as well. Our worldwide branches
+        are operating under the guidance of a team of over 2,000 working
+        professionals who help almost 125,000 people on a daily basis.
+    </div>
+
+    <div class="afimg">
+        We strongly believe that a little help goes a long way and our work
+        would not be possible without the generous support of our valuable
+        donors. Our local and international donors have graciously lent us
+        a hand by supporting our causes and enabling us to serve the needs
+        of people in need.
+    </div>
+    <div style="background-color: rgb(48, 84, 192); width: 100%; height: 300px;">
+        <div class="container" style="margin-top: 50px; background-color: rgb(48, 84, 192);">
+            <div class="row">
+                <div class="col3 col-sm-2 col-med-3 colo-lg-3">
+                    <img src="https://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_food_png.png"
+                        class="calim">
+                    <h2 class="calh2">125,000</h2>
+                    <h5 class="calh5">DAILYDASTARKHAN<span class="calsp">(Monthly)
+                        </span></h5>
+                </div>
+                <div class="col2 col-sm-2 col-med-3 colo-lg-3">
+                    <img src="https://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_family_png.png"
+                        class="calim">
+                    <h2 class="calh2"> 7,500</h2>
+                    <h5 class="calh5">FAMILYADOPTION<span class="calsp">(Monthly)
+                        </span></h5>
+                </div>
+                <div class=" col2 col-sm-2 col-med-3 colo-lg-3">
+                    <img src="https://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_medical_png.png"
+                        class="calim">
+                    <h2 class="calh2">43,784</h2>
+                    <h5 class="calh5">
+                        MEDICAL<span class="calsp">(Monthly)
+                        </span></h5>
+                </div>
+                <div class="col2 col-sm-2 col-med-3 colo-lg-3">
+                    <img src="https://www.saylaniwelfare.com/public_html/images/saylani/icons/icon_education_png.png"
+                        class="calim">
+                    <h2 class="calh2">180,000</h2>
+                    <h5 class="calh5">
+                        EDUCATION<span class="calsp">(Monthly)
+                        </span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="what">
+                    WHAT WE<span class="whatgr">ARE
+                        DOING?
+                    </span></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col4 col">
+                <span style="color: green;"><b>______</b></span>
+                <img src="https://www.saylaniwelfare.com/public_html/images/saylani/favicon.png">
+                <span style="color: green;"><b>______</b></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+             <a href=""><img src="a.png" class="shim"></a>
+                <h2 class="shtxt">
+                    ONLINE SADQAH</h2>
+            </div>
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+                <a href=""><img src="b.png" class="shim"></a> 
+                <h2 class="shtxt">
+                    WELFARE</h2>
+            </div>
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+                <a href=""><img src="c.png" class="shim"></a> 
+                <h2 class="shtxt">
+                    MEDICAL</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+                <a href=""><img src="d.png" class="shim"></a> 
+                <h2 class="shtxt">
+                DASTARKHAN</h2>
+            </div>
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+                <a href=""><img src="e.png" class="shim"></a> 
+                <h2 class="shtxt">
+                    RO PLANT</h2>
+            </div>
+            <div class="col6 col-sm-12 col-md-6 col-lg-4">
+                <a href=""><img src="f.png" class="shim"></a> 
+                <h2 class="shtxt">
+                    EDUCATION</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="con1 container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="row">
+                    <div class="col8 col-lg-12">MISSION AND UPCOMING PROJECTS</div>
+                </div>
+                <div class="row">
+                    <div class="col7 col-sm-12 col-md-12 col-lg-5">
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-2">
+                                <a href=""><IMG src="h.png" class="c7im"></a> 
+                            </div>
+                            <div class="col-sm-8 col-lg-10">
+                                <h3 class="c7hd">HEPATITUS</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col7 col-sm-12 col-md-12 col-lg-5">
+                        <div class="row">
+                            <div class=" col-sm-2 col-lg-2">
+                                <a href=""><IMG src="i.png" class="c7im"></a> 
+                            </div>
+                            <div class="col-sm-10 col-lg-10">
+                                <h3 class="c7hd">HOUSING SOCIETY</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col7 col-sm-12 col-md-12 col-lg-5">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2">
+                                <a href=""><IMG src="j.png" class="c7im"></a> 
+                            </div>
+                            <div class="col-sm-10 col-lg-10">
+                                <h3 class="c7hd">IT LITERACY</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col7 col-sm-12 col-md-12 col-lg-5">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2">
+                                <a href=""><IMG src="k.png" class="c7im"></a> 
+                            </div>
+                            <div class="col-sm-10 col-lg-10">
+                                <h3 class="c7hd">THARPARKER</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="row">
+                    <div class="col8 col-lg-12">Upcoming Events</div>
+                    <div class="row">
+                        <div class="col9 col-sm-7 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            A laboriosam jsjsjd srxneghkdkg hxgdnbd jckjlf hxhsyh?
+                            Cumque exercitationem dolorem quisquam nostrum amet laudantium possimus facere quos!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="what">
+                    IMAGE<span class="whatgr">GALLERY
+                    </span></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col4 col">
+                <span style="color: green;"><b>______</b></span>
+                <img src="https://www.saylaniwelfare.com/public_html/images/saylani/favicon.png">
+                <span style="color: green;"><b>______</b></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col5 col-sm-2 col sm-md-2 col-lg-2">
+              
+                <img src="n.jpg" width=230px alt="Avatar" class="cf">
+                <div class="overlay">
+                    <a href="#" class="icon" title="Download">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>              </div>
+
+              <div class="col5 col-sm-2 col sm-md-2 col-lg-2" >
+                <img src="o.jpg" width="230px"  class="cf">
+                <div class="overlay">
+                    <a href="#" class="icon" title="Download">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>          
+
+            </div>
+            <div class="col5 col-sm-2 col sm-md-2col-lg-2">
+                <img src="p.jpg" width="230px"  class="cf">
+                <div class="overlay">
+                    <a href="#" class="icon" title="Download">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>          
+
+            </div>
+            <div class="col5 col-sm-2 col sm-md-2 col-lg-2">
+                <img src="q.jpg" width="230px" height="148px"  class="cf">
+                <div class="overlay">
+                    <a href="#" class="icon" title="Download">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>          
+            </div>
+
+            <div class="col5 col-sm-2 col sm-md-2 col-lg-2">
+                <img src="r.jpg" width="230px" height="148px"  class="cf">
+                <div class="overlay">
+                    <a href="#" class="icon" title="Download">
+                      <i class="fa fa-download"></i>
+                    </a>
+                  </div>          
+            </div>
+
+        </div>
+    </div>
+    <div class="foot">
+    <div class="con2 container">
+        <div class="row1 row">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+                <div class="row1 row">
+                    <div class="col">Head Office</div>
+                </div>
+                <div class="row1 row">
+                    <div class="col">A-25, Bahadurabad Chowrangi Karachi, Pakistan</div>
+                </div>
+                
+                     <div class="row1 row">
+                        <div class="col-sm-5 col-md-5 col-lg-5">
+                            <div class="row1 row">
+                                <div class="col-sm-2 col-lg-2"><img src="u.png" width=20px></div>
+                                <div class="col-lg-10 col-lg-10">UAN: 111-729-526</div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-7 col-md-6 col-lg-7">
+                            <div class="row1 row">
+
+                                <div class="col-sm-1 col-lg-1"><img src="u.png" width=20></div>
+                                <div class="col-lg-10 col-lg-10">(+0092-213) 4130786-90
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row1 row">
+                        <div class="col-sm-5 col-md-5 col-lg-7">
+                            <div class="row">
+                                <div class="col-sm-1 col-lg-1"><img src="u.png" width=20px></div>
+                                <div class="col-sm-10 col-lg-10">CELL: 92-311-1729526</div>
+                            </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row1 row">
+                        <div class="col-sm-5 col-md-5 col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-1"><img src="u.png" width=20px></div>
+                                <div class="col-lg-10">USA NO +1(716)941 7792</div>
+                            </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row1 row">
+                        <div class="col-sm-5 col-md-5 col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-1"><img src="u.png" width=20px></div>
+                                <div class="col-lg-10">UK NO (+44)115 970 6256</div>
+                            </div>
+
+                        </div>
+                      </div>
+                      <div class="row1 row">
+                        <div class="col-sm-5 col-md-5 col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-1"><img src="u.png" width=20px></div>
+                                <div class="col-lg-10"> info@saylaniwelfare.com</div>
+                            </div>
+
+                        </div>
+                      </div>
+
+
+
+
+
+                     
+                   
+                
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+<H6 CLASS="foolink">USEFUL LINKS</H6>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <H6 CLASS="foolink">CONNECT WITH US</H6>
+                <DIV class="row">
+                    <a href="https://www.facebook.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-facebook fa-lg" ></i></a>
+                    <a href="https://www.twitter.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-twitter fa-lg" ></i></a>
+                    <a href="https://www.google.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-google fa-lg" ></i></a>
+                    <a href="https://www.instagram.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-instagram fa-lg" ></i></a>
+                    <a href="https://www.whatsapp.com" class="btn-social btn-outline"> <i class="fa fa-fw fa-whatsapp fa-lg" ></i></a>
+                  
+                </DIV>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cpr">
+   <div class="container">
+       <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-12">
+            Copyright © 2020 Saylani Welfare
+           </div>
+       </div>
+
+   </div>
+</div>
+</body>
+
+</html>
